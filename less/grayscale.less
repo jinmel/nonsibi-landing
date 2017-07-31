@@ -255,7 +255,7 @@ a {
     width: 100%;
     padding: 50px 0;
     color: white;
-    background: url(../img/Pic_candidate_2_gray.jpg) no-repeat center center scroll;
+    background: linear-gradient(rgba(40,40,40,.5),rgba(40,40,40,.5)), url(../img/Pic_candidate_2.jpg) no-repeat center center scroll;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -267,12 +267,22 @@ a {
   width: 100%;
   padding: 50px 0;
   color: white;
-  background: url(../img/Pic_candidate_3_gray.jpg) no-repeat center center scroll;
+  background: linear-gradient(rgba(40,40,40,.5),rgba(40,40,40,.5)), url(../img/Pic_candidate_3.jpg) no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+.overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5); /*dim the background*/
 }
 
 
@@ -284,7 +294,7 @@ a {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 100px;
     }
 
     .download-section {
