@@ -131,9 +131,15 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Register</h2>
+                <script src="js/register.js"></script>
                 <p>
-                  <a href="#" class="btn btn-default btn-lg">Register for the event</a>
+                  <btn id='register-form-btn' class="btn btn-default btn-lg" onclick="toggle_registration();">Register for the event</btn>
                 </p>
+                <!--
+                 TODO: make iframe border more natural https://www.thoughtco.com/iframes-and-css-3468669
+                 TODO: make button that makes iframe appear
+                 -->
+                <iframe id="register-form" src="https://docs.google.com/forms/d/e/1FAIpQLSdDQUoB_ixp0gYRF_nSDboBRYehjSG2X9w8j6yHHrs5FZy3JA/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0" hidden="true">Loading...</iframe>
             </div>
         </div>
     </section>
