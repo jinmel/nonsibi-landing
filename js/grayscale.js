@@ -32,6 +32,11 @@ $('.navbar-collapse ul li a').click(function() {
     $(".navbar-collapse").collapse('hide');
 });
 
+$(document).ready(function(){
+  Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js');
+  Galleria.run('.galleria');
+});
+
 // // Google Maps Scripts
 // var map = null;
 // var latlng = [37.5222336, 127.037839];
